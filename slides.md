@@ -158,7 +158,7 @@ I've built out the scaffolding for this.
 
 We'll fill in the gaps together.
 
-https://github.com/benzittlau/ceweek-2017-api-workshop-code
+https://github.com/benzittlau/eceweek-2017-api-workshop-code
 
 
 # .env File
@@ -298,76 +298,76 @@ def get_most_recent_issue_timestamp():
 Then you can copy my answer
 
 
-
-## Some projects will give you this for free
-[Ember Data](https://github.com/emberjs/data)
-
-
-## Libraries
-### Ruby
-Sinatra
-
-HTTParty
-
-### JS
-Handlebars
-
-Lodash
-
-JQuery
-
-Twitter Bootstrap
-
-
-## Source
-[https://github.com/benzittlau/twitter_caching](https://github.com/benzittlau/twitter_caching)
+# Your goal
+Know when any updates happen here:
+![GitHub Issues](img/github_issues.png)
 
 
 
-## What do we need to start caching?
+# GLUE THAT STUFF TOGETHER!
 
 
-## Identifiers and Payloads
-Most caching sytems are "key value stores"
+# Write our "main loop"
+Final exam!
+``` python
+# This loop will need to do the following:
+# - Get the latest timestamp from timestamp from GitHub
+# - If it's changed, send an SMS through Twilio
+# - Rinse, Repeat
+while True:
+    #>>>>>>>>>>> YOUR CODE STARTS HERE
 
-They need a key, and something to store
-
-
-## Mirroring HTTP
-"Uniform resource identifier" (a key)
-
-The returned body is a that resources payload
-
-
-
-## Building in model awareness
-
-
-## Learning about tweets
-By making our caching aware of our data model we can improve efficiency.
-
-This comes at a cost of complexity and cache "bleed" into our app.
+    #<<<<<<<<<<< YOUR CODE ENDS HERE
+    time.sleep(15)
+```
 
 
+# 10 minutes
+Then you can copy my answer
 
-## Building in persistence
 
-
-## HTML5 Local Storage
-Local storage persists accross reloads
-
-This can be a good thing, but....
+# Your goal
+Know when any updates happen here:
+![Fully working!](img/twilio_github_update.jpg)
 
 
 
-## Building in expiration
+# CHALLENGES
+For the keeners in class
 
 
-## We need a way to ignore 'stale' data
-There are many strategies to invalid cache
-
-"Time To Live" is a quick and easy one
+# Pull Request Support
+Send a different message when a pull request on the same repo gets updated
 
 
-# Sample image slide
-![Glenfarclas](img/glenfarclas.jpg)
+# Optimize your GitHub API usage
+Optimizing API usage is an important skill
+
+Look for opportunities with things like sort, limit, filters, etc.
+
+
+# Do it the hard way
+SDK's are great, but limit the amount of control you have
+
+Implement one of the API's directly using a library like requests:
+
+https://pypi.python.org/pypi/requests
+
+Twilio: https://www.twilio.com/docs/api/rest
+
+GitHub: https://developer.github.com/v3/
+
+
+# Push instead of Pull
+GitHub offers webhooks, think about how you could use them instead
+
+https://developer.github.com/webhooks/
+
+
+
+# THANK YOU!
+Thank you for your time, attention, and effort
+
+@benzittlau
+
+ben@getjobber.com
