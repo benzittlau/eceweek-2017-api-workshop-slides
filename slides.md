@@ -216,7 +216,6 @@ It's free during trial!
 https://www.twilio.com/try-twilio
 
 
-
 # Setup a "from" number with Twilio
 https://www.twilio.com/console/phone-numbers/incoming
 ![Twilio Numbers](img/twilio_from.png)
